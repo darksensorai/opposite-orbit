@@ -17,9 +17,9 @@ export default defineConfig({
 			studioUrl: "/studio",
 			// previewUrls: {
 			// 	published: (id) => `/blog/${id}`,
-			},
-		}
-
-		}), 
+				}
+			}
+		})
+	], 
 	react()]
 });
