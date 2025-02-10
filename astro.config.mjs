@@ -12,7 +12,13 @@ export default defineConfig({
 		dataset: 'production',
 		useCdn: false,
 		apiVersion: "2025-02-10",
-		studioBasePath: '/studio'
+		studioBasePath: '/studio',
+		stega: {
+			studioUrl: "/studio",
+			// previewUrls: {
+			// 	published: (id) => `/blog/${id}`,
+			},
+		}
 
 		}), 
 	react()]
