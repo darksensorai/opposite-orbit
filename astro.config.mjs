@@ -5,6 +5,8 @@ import sanity from "@sanity/astro";
 import react from "@astrojs/react";
 
 import { loadEnv } from "vite";
+import cloudflare from "@astrojs/cloudflare";
+import netlify from "@astrojs/netlify";
 const { PUBLIC_SANITY_PROJECT_ID, PUBLIC_SANITY_DATASET } = loadEnv(
   process.env.NODE_ENV,
   process.cwd(),
@@ -26,4 +28,6 @@ export default defineConfig({
     }),
     react(),
   ],
+
+  adapter: netlify(),
 });
